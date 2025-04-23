@@ -5,8 +5,8 @@ ____________________________________________________
 Активируйте виртуальное окружение:
 
 bash
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate.bat # Windows
+source venv/bin/activate    # Linux/Mac
+venv\Scripts\activate.bat   # Windows
 -------------------------------------------------
 Установите зависимости:
 
