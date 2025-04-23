@@ -1,0 +1,27 @@
+taxi_project/
+├── venv/                   # Виртуальное окружение
+├── taxi/
+│   ├── __init__.py
+│   ├── settings.py         # Основные настройки проекта
+│   ├── urls.py             # Главный роутинг
+│   └── wsgi.py
+├── core/
+│   ├── migrations/         # Миграции БД
+│   ├── __init__.py
+│   ├── admin.py            # Админ-панель
+│   ├── apps.py
+│   ├── decorators.py       # Кастомные декораторы
+│   ├── forms.py            # Формы для пользователей
+│   ├── models.py           # Модели данных
+│   ├── tests.py
+│   ├── urls.py             # Роутинг приложения
+│   └── views.py            # Логика представлений
+├── templates/
+│   └── core/
+│       ├── base.html       # Базовый шаблон
+│       ├── home.html       # Главная страница
+│       ├── signup.html     # Регистрация
+│       ├── create_trip.html # Создание поездки
+│       └── driver_dashboard.html # Панель водителя
+├── .env                    # Переменные окружения
+└── manage.py               # Утилита управления
