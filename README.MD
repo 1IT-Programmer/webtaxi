@@ -6,6 +6,7 @@ ____________________________________________________
 
 $ bash
 | source venv/bin/activate    # Linux/Mac
+
 | venv\Scripts\activate.bat   # Windows
 -------------------------------------------------
 Установите зависимости:
@@ -17,6 +18,7 @@ $ bash
 
 $ bash
 | python manage.py makemigrations
+
 | python manage.py migrate
 -----------------------------------------------
 Создайте администратора:
