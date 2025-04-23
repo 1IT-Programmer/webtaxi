@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Добро пожаловать в междугороднее такси!</h1>
+  
+  {% if user.is_authenticated %}
+    <div class="mt-4">
+      {% if user.role == 'PASSENGER' %}
+        <a href="{% url 'create_trip' %}" class="btn btn-lg btn-primary">
+          Заказать поездку
+        </a>
+      {% elif user.role == 'DRIVER' %}
+        <a href="{% url 'driver_dashboard' %}" class="btn btn-lg btn-success">
+          Панель водителя
+        </a>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="mt-4">
+      <a href="{% url 'login' %}" class="btn btn-primary">Вход</a>
+      <a href="{% url 'signup' %}" class="btn btn-success">Регистрация</a>
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
