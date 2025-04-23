@@ -4,30 +4,30 @@ ____________________________________________________
 --------------------------------------------------
 Активируйте виртуальное окружение:
 
-bash
-source venv/bin/activate    # Linux/Mac
-venv\Scripts\activate.bat   # Windows
+$ bash
+| source venv/bin/activate    # Linux/Mac
+| venv\Scripts\activate.bat   # Windows
 -------------------------------------------------
 Установите зависимости:
 
-bash
-pip install django python-dotenv
+$ bash
+| pip install django python-dotenv
 ------------------------------------------------
 Примените миграции:
 
-bash
-python manage.py makemigrations
-python manage.py migrate
+$ bash
+| python manage.py makemigrations
+| python manage.py migrate
 -----------------------------------------------
 Создайте администратора:
 
-bash
-python manage.py createsuperuser
+$ bash
+| python manage.py createsuperuser
 -----------------------------------------------
 Запустите сервер:
 
-bash
-python manage.py runserver
+$ bash
+| python manage.py runserver
 _________________________________________________
 
 --------Важные особенности реализации------------
